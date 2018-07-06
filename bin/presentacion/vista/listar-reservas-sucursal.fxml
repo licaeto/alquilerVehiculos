@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorReservasPorSucursal">
+   <children>
+      <TableView fx:id="tabla" layoutX="111.0" layoutY="87.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="79.0" text="ID" />
+          <TableColumn fx:id="fRecogida" prefWidth="121.0" text="Fecha de Recogida" />
+            <TableColumn fx:id="lRecogida" prefWidth="119.0" text="Lugar de Recogida" />
+            <TableColumn fx:id="fDevolucion" prefWidth="81.0" text="Fecha de Devolucion" />
+            <TableColumn fx:id="lDevolucion" prefWidth="75.0" text="Lugar de Devolucion" />
+            <TableColumn fx:id="modalidad" prefWidth="75.0" text="Modalidad" />
+            <TableColumn fx:id="dni" prefWidth="75.0" text="Cliente" />
+            <TableColumn fx:id="categoria" prefWidth="75.0" text="Categoria" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

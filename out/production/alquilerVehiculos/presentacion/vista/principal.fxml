@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorPrincipal">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="_Archivo">
+                  <items>
+                    <MenuItem onAction="#salir" text="_Salir" />
+                  </items>
+                </Menu>
+                <Menu text="_Cliente">
+                  <items>
+                    <MenuItem onAction="#crearReserva" text="Crear _Reserva" />
+                        <MenuItem onAction="#crearCliente" text="_Crear Cliente" />
+                  </items>
+                </Menu>
+                <Menu text="_Empleado">
+                  <items>
+                    <MenuItem onAction="#crearCliente" text="_Crear Cliente" />
+                        <MenuItem onAction="#listarReservasSucursal" text="Listar _Reservas Sucursal" />
+                        <MenuItem mnemonicParsing="false" onAction="#listarVehiculosPorSucursal" text="Listar Vehiculos Disponibles" />
+                        <MenuItem mnemonicParsing="false" onAction="#entregarVehiculo" text="Entregar Vehiculo Reservado" />
+                  </items>
+                </Menu>
+                  <Menu text="_Admin">
+                     <items>
+                        <MenuItem onAction="#listarSucursales" text="_Listar Sucursales" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -37,7 +37,7 @@ public class ClienteDAOImp implements IClienteDAO {
 					LocalDateTime.of(rs.getDate("FECHACARNETCONDUCIR").toLocalDate(),rs.getTime("FECHACARNETCONDUCIR").toLocalTime()),
 					rs.getString("DIGITOSTC"),
 					rs.getInt("MESTC"),
-					rs.getInt("AÃ‘OTC"),
+					rs.getInt("AÑOTC"),
 					rs.getInt("CVCTC"),
 					rs.getString("TIPOTC"));
 		}

@@ -26,7 +26,6 @@ public class ControladorPrincipal {
 	Sucursal sucursal;
 	//TODO anyadir constantes de tipo String para la vistas correspondientes a los casos de uso Crear Reserva y Listar Reservas de una Sucursal
 	private Stage primaryStage;
-
 	/*
 	 * Inicia el caso de uso para mostrar la lista de sucursales de la base de datos.
 	 */
